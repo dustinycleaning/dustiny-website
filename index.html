@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dustiny Cleaning Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #007BFF; color: white; padding: 20px; text-align: center; }
+        nav { text-align: center; padding: 10px; background: #0056b3; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #007BFF; color: white; } 
+        footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <img src="logo.jpg" alt="Dustiny Cleaning Services Logo" style="height: 80px;"> 
+            <header>
+                <div class="logo-banner">          
+            <h1>Dustiny Cleaning Services</h1>
+            <p>Your Trusted Cleaning Partner</p>       
+        <h1>Dustiny Cleaning Services</h1>
+        <p>Professional Cleaning Solutions for Homes and Offices</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="booking.html">Book a Service</a>
+        <a href="index.html">About Us</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Dustiny Cleaning Services</h2>
+        <p>We provide professional cleaning services, including carpet cleaning, upholstery cleaning, car interior cleaning, and more.</p>
+    </div>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Dustiny Cleaning Services was founded on April 1, 2025, by Erick Ombui with a vision to provide top-tier cleaning solutions for homes and businesses. Motivated by a passion for cleanliness and customer satisfaction, Erick saw a gap in professional, reliable cleaning services. Through dedication and innovation, Dustiny Cleaning Services has grown to become a trusted name in the industry. Our goal is to create cleaner, healthier environments for our clients while delivering excellent customer service and efficiency.</p>
+    </div>
+    <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Carpet & Upholstery Cleaning</li>
+            <li>Car Interior Cleaning</li>
+            <li>Mattress & Bed Cleaning</li>
+            <li>Deep Cleaning Services</li>
+            <li>Fumigation & Pest Control</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Pricing</h2>
+        <table>
+        <h3>Car Interior Cleaning Packages</h3>
+        <table>
+            <tr><th>Vehicle Type</th><th>Full Interior Cleaning (KES)</th></tr>
+            <tr><td>Saloon Car</td><td>3,000 - 5,000</td></tr>
+            <tr><td>SUV</td><td>6,000</td></tr>
+            <tr><td>Large SUV</td><td>6,500</td></tr>
+        </table>
+        
+        <h3>Mattress & Bed Cleaning</h3>
+        <table>
+            <tr><th>Mattress Size</th><th>Pricing (KES)</th></tr>
+            <tr><td>3' by 6' Mattress</td><td>1,000 - 1,500</td></tr>
+            <tr><td>4' by 6' Mattress</td><td>2,000</td></tr>
+            <tr><td>5' by 6' Mattress</td><td>2,500</td></tr>
+            <tr><td>6' by 6' Mattress</td><td>3,000</td></tr>
+            <tr><td>Bed Cleaning</td><td>500</td></tr>
+        </table>
+        
+        <h3>Deep Cleaning Services</h3>
+        <table>
+            <tr><th>Area</th><th>Pricing (KES)</th></tr>
+            <tr><td>Kitchen, Bathroom, and Living Areas</td><td>3,000</td></tr>
+        </table>
+        
+        <h3>Fumigation & Pest Control</h3>
+        <table>
+            <tr><th>House Type</th><th>Pricing (KES)</th></tr>
+            <tr><td>Bedsitter</td><td>1,500</td></tr>
+            <tr><td>1 Bedroom</td><td>4,000</td></tr>
+            <tr><td>2 Bedroom</td><td>5,000</td></tr>
+            <tr><td>3 Bedroom</td><td>6,000</td></tr>
+            <tr><td>4 Bedroom</td><td>8,000</td></tr>
+            <tr><td>5 Bedroom</td><td>10,500</td></tr>
+        </table>
+    </nav>
+    <div class="container">
+        <h2>Book a Cleaning Service</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                <option value="Seat Cleaning">Seat Cleaning</option>
+                <option value="Full Interior Cleaning (Saloon Car)">Full Interior Cleaning (Saloon Car)</option>
+                <option value="Full Interior Cleaning (SUV)">Full Interior Cleaning (SUV)</option>
+                <option value="Full Interior Cleaning (Large SUV)">Full Interior Cleaning (Large SUV)</option>
+                <option value="Mattress Cleaning">Mattress Cleaning</option>
+                <option value="Deep Cleaning">Deep Cleaning</option>
+                <option value="Fumigation & Pest Control">Fumigation & Pest Control</option>
+            </select>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="message">Additional Instructions:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Phone: +254 712 836 981</p>
+        <p>Email: dustinycleaningservices@gmail.com</p>
+        <p>Location: Nairobi, Kenya</p>
+    <section>
+        <h2>Your Trusted Cleaning Partner</h2>
+        <p>We provide top-quality cleaning solutions for homes, offices, and vehicles. Explore our services and pricing.</p>
+    </section>
+    <footer>
+        <p>Contact us: +254 712 345 678 | Email: dustinycleaningservices@gmail.com</p>
+        &copy; 2025 Dustiny Cleaning Services. All rights reserved.
+    </footer>
+</body>
+</html>
